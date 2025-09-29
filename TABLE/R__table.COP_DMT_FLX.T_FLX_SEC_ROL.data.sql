@@ -1,0 +1,30 @@
+USE SCHEMA COP_DMT_FLX{{uid}};
+
+MERGE INTO T_FLX_SEC_ROL USING (
+    WITH
+    _NEW_T_FLX_SEC_ROL (ROL_COD, ROL_DSC) AS (SELECT * FROM VALUES
+    /*** BEGIN DATA ***/
+    ('<DEFAULT>',        'Default role, applied to users w/o a (valid) one'),
+    ('CAN_DEL_SCENARIO', 'This role has permission to request a scenario deletion')
+    /*** END DATA ***/
+    ),
+    _ALL_T_FLX_SEC_ROL (ROL_COD, ROL_DSC, T_REC_DLT_FLG) AS (
+        SELECT *, 0 AS T_REC_DLT_FLG FROM _NEW_T_FLX_SEC_ROL
+        UNION ALL
+        SELECT ROL_COD, ROL_DSC, 1 AS T_REC_DLT_FLG
+        FROM T_FLX_SEC_ROL
+        WHERE NOT EXISTS (
+            SELECT 1
+            FROM _NEW_T_FLX_SEC_ROL
+            WHERE T_FLX_SEC_ROL.ROL_COD = _NEW_T_FLX_SEC_ROL.ROL_COD
+        )
+    )
+    SELECT * FROM _ALL_T_FLX_SEC_ROL
+
+) AS _T_FLX_SEC_ROL ON (T_FLX_SEC_ROL.ROL_COD = _T_FLX_SEC_ROL.ROL_COD)
+    WHEN MATCHED AND _T_FLX_SEC_ROL.T_REC_DLT_FLG = 1
+        THEN DELETE
+    WHEN MATCHED AND _T_FLX_SEC_ROL.T_REC_DLT_FLG = 0 AND (T_FLX_SEC_ROL.ROL_DSC <> _T_FLX_SEC_ROL.ROL_DSC)
+        THEN UPDATE SET T_FLX_SEC_ROL.ROL_DSC = _T_FLX_SEC_ROL.ROL_DSC, T_FLX_SEC_ROL.T_REC_UPD_TST = current_timestamp
+    WHEN NOT MATCHED
+        THEN INSERT (ROL_COD, ROL_DSC, T_REC_DLT_FLG, T_REC_INS_TST, T_REC_UPD_TST) VALUES (_T_FLX_SEC_ROL.ROL_COD, _T_FLX_SEC_ROL.ROL_DSC, 0, current_timestamp, current_timestamp);
