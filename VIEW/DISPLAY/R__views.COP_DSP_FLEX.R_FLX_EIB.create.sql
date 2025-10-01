@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 CREATE OR REPLACE VIEW R_FLX_EIB 
          (EIB_ELM_KEY                                      COMMENT 'Business type (EIB) Key : concatenation of CBU and Business type Code'

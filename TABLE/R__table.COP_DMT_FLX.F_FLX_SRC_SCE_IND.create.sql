@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR ALTER TABLE F_FLX_SRC_SCE_IND 
          (CBU_COD                 VARCHAR(10)                     COMMENT 'CBU/Market'

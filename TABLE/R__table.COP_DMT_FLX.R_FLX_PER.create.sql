@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE R_FLX_PER 
          (PER_ELM_COD         VARCHAR(30)                               COMMENT 'Period code'

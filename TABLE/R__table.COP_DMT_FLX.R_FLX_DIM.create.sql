@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE R_FLX_DIM 
          (FLX_DIM_COD      VARCHAR(50)                             COMMENT 'Flex dimension code'

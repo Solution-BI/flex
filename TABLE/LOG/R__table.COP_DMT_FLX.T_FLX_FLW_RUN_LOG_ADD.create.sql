@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE T_FLX_FLW_RUN_LOG_ADD (
 	DS_IS_RUN_SOFT VARCHAR(256) NOT NULL COMMENT 'ETL Software Name (can be Full qualified name of runtime environment for Informatica Cloud, SNOW for Snowflake, Informatica Mass Ingestion, …)',

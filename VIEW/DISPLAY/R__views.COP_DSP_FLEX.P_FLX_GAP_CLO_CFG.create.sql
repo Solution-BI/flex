@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 CREATE OR REPLACE VIEW P_FLX_GAP_CLO_CFG
          (ID                                                      COMMENT 'ID for writeback'

@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE W_FLX_SCE_EML__CCD
          (SCE_ELM_KEY                  VARCHAR(64)                             COMMENT 'Scenario Key : concatenation of CBU and Scenario Code'

@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 CREATE OR REPLACE VIEW R_FLX_SAL_SUP 
          (SAL_SUP_ELM_KEY                                       COMMENT 'Sales Supply Point Key : concatenation of CBU and Sales Supply Point Code'

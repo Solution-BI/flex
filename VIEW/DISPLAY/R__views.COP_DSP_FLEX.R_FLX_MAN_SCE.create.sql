@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 CREATE OR REPLACE VIEW R_FLX_MAN_SCE 
          (MAN_SCE_ELM_KEY                                       COMMENT 'Dataset Key : concatenation of CBU and Dataset Code'

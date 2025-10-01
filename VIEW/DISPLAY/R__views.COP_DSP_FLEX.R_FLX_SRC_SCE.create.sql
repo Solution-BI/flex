@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 CREATE OR REPLACE VIEW R_FLX_SRC_SCE 
          (SRC_SCE_ELM_KEY                     COMMENT 'Source scenario key concatenation of the cbu code and the scenario code'
@@ -7,13 +7,13 @@ CREATE OR REPLACE VIEW R_FLX_SRC_SCE
          ,CBU_COD                             COMMENT 'CBU/Market'
          ) COMMENT = '[Flex] Source scenario masterdata (from Controlling Cloud or Flex or Flat Files)'
 AS
-SELECT    R_SCENARIO_LIST_UNIFY.CBU_COD       || '-' || 
-          R_SCENARIO_LIST_UNIFY.SCENARIO_CODE                  SRC_SCE_ELM_KEY
-         ,R_SCENARIO_LIST_UNIFY.SCENARIO_CODE                  SRC_SCE_ELM_COD
-         ,R_SCENARIO_LIST_UNIFY.SCENARIO_CODE                  SRC_SCE_ELM_DSC
-         ,R_SCENARIO_LIST_UNIFY.CBU_COD                        CBU_COD
-FROM      {{database}}.COP_DSP_CONTROLLING_CLOUD.R_SCENARIO_LIST_UNIFY
-UNION
+-- SELECT    R_SCENARIO_LIST_UNIFY.CBU_COD       || '-' || 
+--           R_SCENARIO_LIST_UNIFY.SCENARIO_CODE                  SRC_SCE_ELM_KEY
+--          ,R_SCENARIO_LIST_UNIFY.SCENARIO_CODE                  SRC_SCE_ELM_COD
+--          ,R_SCENARIO_LIST_UNIFY.SCENARIO_CODE                  SRC_SCE_ELM_DSC
+--          ,R_SCENARIO_LIST_UNIFY.CBU_COD                        CBU_COD
+-- FROM      {{database}}.COP_DSP_CONTROLLING_CLOUD.R_SCENARIO_LIST_UNIFY
+-- UNION
 SELECT    SCE_ELM_KEY                                   SRC_SCE_ELM_KEY
          ,SCE_ELM_COD                                   SRC_SCE_ELM_COD
          ,SCE_ELM_DSC || ' [Flex]'                      SRC_SCE_ELM_DSC

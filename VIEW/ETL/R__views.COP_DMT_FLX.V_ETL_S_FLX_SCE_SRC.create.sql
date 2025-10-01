@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE VIEW V_ETL_S_FLX_SCE_SRC
          (SRC_CBU_COD                                                       COMMENT 'Source CBU/Market'

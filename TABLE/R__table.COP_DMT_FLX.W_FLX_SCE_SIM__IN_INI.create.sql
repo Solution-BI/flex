@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TRANSIENT TABLE W_FLX_SCE_SIM__IN_INI  
          (CBU_COD                            VARCHAR(10)                        COMMENT 'CBU/Market'

@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE R_FLX_GRP_IND
 (         IND_GRP_COD                             VARCHAR(120)                            COMMENT 'Indicator Group Code'

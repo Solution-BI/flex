@@ -1,5 +1,5 @@
 USE DATABASE {{env}}_COP;
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 /*
 =========================================================================

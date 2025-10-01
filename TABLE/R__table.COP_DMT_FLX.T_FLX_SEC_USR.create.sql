@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE SEQUENCE IF NOT EXISTS seq__t_flx_sec_usr__id;
 

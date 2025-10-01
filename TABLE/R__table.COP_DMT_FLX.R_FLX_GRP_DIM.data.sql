@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 /*----------------------------INFO---------------------------------------------*/
 /* Name : R_FLX_GRP_DIM                                                        */

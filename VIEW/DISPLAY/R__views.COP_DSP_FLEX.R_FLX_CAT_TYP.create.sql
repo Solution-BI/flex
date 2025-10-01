@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 CREATE OR REPLACE VIEW R_FLX_CAT_TYP 
          (CAT_TYP_ELM_KEY                                             COMMENT 'Category Type Key : concatenation of CBU and Category Type Code'

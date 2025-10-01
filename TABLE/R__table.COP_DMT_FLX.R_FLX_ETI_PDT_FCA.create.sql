@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE R_FLX_ETI_PDT_FCA
          (CBU_COD                                 VARCHAR(10)                                              COMMENT 'CBU/Market code'

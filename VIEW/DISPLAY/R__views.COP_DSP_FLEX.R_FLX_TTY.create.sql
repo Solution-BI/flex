@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 CREATE OR REPLACE VIEW R_FLX_TTY 
          (TTY_ELM_KEY                                                 COMMENT 'Territory Key : concatenation of CBU and Territory Code'

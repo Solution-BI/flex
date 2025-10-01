@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 DROP PROCEDURE IF EXISTS SP_Flex_Scenario_Initialization();
 DROP PROCEDURE IF EXISTS SP_Flex_Scenario_Ini_Copy_Default_Scenario();

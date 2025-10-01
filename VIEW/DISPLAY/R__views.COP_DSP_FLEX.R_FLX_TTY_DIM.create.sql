@@ -1,4 +1,4 @@
-use schema cop_dsp_flex{{uid}};
+use schema cop_dsp_flex;
 
 create or replace view
     r_flx_tty_dim

@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 CREATE OR REPLACE VIEW R_FLX_SCE 
          (SCE_ELM_KEY                               COMMENT 'Scenario Key : concatenation of CBU and Scenario Code'

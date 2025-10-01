@@ -1,4 +1,4 @@
-use schema cop_dmt_flx{{uid}};
+use schema cop_dmt_flx;
 
 create or replace table
     r_flx_grp_sal_sup

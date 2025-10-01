@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE R_FLX_PDT 
          (PDT_ELM_KEY                        VARCHAR(64)                         COMMENT 'Product Key : concatenation of CBU and Product Code'

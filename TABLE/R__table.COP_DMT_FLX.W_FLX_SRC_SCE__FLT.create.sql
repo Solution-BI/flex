@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TRANSIENT TABLE W_FLX_SRC_SCE__FLT
          (SCE_ELM_KEY                             VARCHAR(64)                                              COMMENT 'Flex Scenario key'

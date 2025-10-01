@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 CREATE OR REPLACE VIEW R_FLX_PDT 
          (PDT_ELM_KEY                                                 COMMENT 'Product Key : concatenation of CBU and Product Code'

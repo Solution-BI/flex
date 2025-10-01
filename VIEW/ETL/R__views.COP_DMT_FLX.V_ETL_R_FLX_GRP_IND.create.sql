@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE VIEW V_ETL_R_FLX_GRP_IND
 (      IND_GRP_IND                             COMMENT 'Indicator Group Code'

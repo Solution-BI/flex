@@ -1,4 +1,4 @@
-USE SCHEMA COP_DSP_FLEX{{uid}};
+USE SCHEMA COP_DSP_FLEX;
 
 create or replace view R_FLX_CAT_TYP_DIM_GRP(
 	CAT_TYP_DIM_GRP_COD,

@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE R_FLX_CUR_RAT 
          (CUR_KEY             VARCHAR(64)                             COMMENT 'Currency Key : concatenation of Currency code and Year Code'

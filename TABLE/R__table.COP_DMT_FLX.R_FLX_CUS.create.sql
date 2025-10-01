@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE R_FLX_CUS 
          (CUS_ELM_KEY         VARCHAR(30)                             COMMENT 'Customer Key : concatenation of CBU and Customer Code'

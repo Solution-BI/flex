@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE R_FLX_SAL_SUP 
          (SAL_SUP_ELM_KEY     VARCHAR(64)                             COMMENT 'Sales Supply Point Key : concatenation of CBU and Sales Supply Point Code'

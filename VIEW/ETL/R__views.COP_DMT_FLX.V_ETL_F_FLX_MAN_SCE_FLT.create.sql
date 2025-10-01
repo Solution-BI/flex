@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 /*----------------------------INFO---------------------------------------------*/
 /* Name : V_ETL_F_FLX_MAN_SCE_FLT                                              */

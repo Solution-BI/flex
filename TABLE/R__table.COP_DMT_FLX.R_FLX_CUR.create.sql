@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR ALTER TABLE R_FLX_CUR 
          (CUR_COD             VARCHAR(30)                             COMMENT 'Currency code'

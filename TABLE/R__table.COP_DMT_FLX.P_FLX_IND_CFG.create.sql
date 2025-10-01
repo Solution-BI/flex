@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE P_FLX_IND_CFG
          (IND_ELM_COD                            VARCHAR(30)                   COMMENT 'Indicator code'

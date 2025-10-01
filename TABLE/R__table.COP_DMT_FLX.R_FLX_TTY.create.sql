@@ -1,4 +1,4 @@
-USE SCHEMA COP_DMT_FLX{{uid}};
+USE SCHEMA COP_DMT_FLX;
 
 CREATE OR REPLACE TABLE R_FLX_TTY 
          (TTY_ELM_KEY         VARCHAR(64)                             COMMENT 'Territory Key : concatenation of CBU and Territory Code'
