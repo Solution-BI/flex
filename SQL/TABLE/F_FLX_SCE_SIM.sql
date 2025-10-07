@@ -1,4 +1,4 @@
-/****** Object:  Table [flex].[F_FLX_SCE_SIM]    Script Date: 10/2/2025 9:15:21 AM ******/
+/****** Object:  Table [flex].[F_FLX_SCE_SIM]    Script Date: 10/7/2025 4:01:00 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -85,11 +85,6 @@ CREATE TABLE [flex].[F_FLX_SCE_SIM](
 	[AP4002C1] [float] NULL,
 	[AP4002C2] [float] NULL,
 	[AP4002C3] [float] NULL,
-	[AP4003_B] [float] NULL,
-	[AP4003_I] [float] NULL,
-	[AP4003C1] [float] NULL,
-	[AP4003C2] [float] NULL,
-	[AP4003C3] [float] NULL,
 	[SF5000_B] [float] NULL,
 	[SF5000_I] [float] NULL,
 	[SF5000C1] [float] NULL,
@@ -127,6 +122,11 @@ CREATE TABLE [flex].[F_FLX_SCE_SIM](
 	[IE7000C3] [float] NULL,
 	[T_REC_INS_TST] [datetime] NULL,
 	[T_REC_UPD_TST] [datetime] NULL,
+	[AP4003_B] [float] NULL,
+	[AP4003_I] [float] NULL,
+	[AP4003C1] [float] NULL,
+	[AP4003C2] [float] NULL,
+	[AP4003C3] [float] NULL,
  CONSTRAINT [PK_F_FLX_SCE_SIM] PRIMARY KEY NONCLUSTERED 
 (
 	[ID] ASC,
